@@ -19,7 +19,7 @@ Clears the console window
 Prompts the user for some iinformation. Returns text typed. If you don't pass something to the prompt variable, it will be blank
 
 ### GUI
-####alert(title,text)
+#### alert(title,text)
 Shows a basic alert box with an 'OK' button
 
 Enjoy, and feel free to contribute and or send pole requests/ideas!
