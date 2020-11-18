@@ -5,15 +5,15 @@ import wx
 
 class Console(object):
     @staticmethod
-    def title(title):
+    def title(title: str):
         ctypes.windll.kernel32.SetConsoleTitleW(title)
 
     @staticmethod
-    def output(text):
+    def output(text: str):
         print(text, end="")
 
     @staticmethod
-    def output_line(text):
+    def output_line(text: str):
         print(text)
 
     @staticmethod
@@ -21,17 +21,17 @@ class Console(object):
         os.system("cls")
 
     @staticmethod
-    def text_input(self, prompt=""):
+    def text_input(prompt: str = ""):
         return input(prompt)
 
 
 class GUI(object):
     @staticmethod
-    def alert(self, title, text):
+    def alert(title: str, text: str):
         wx.MessageBox(text, title)
 
     @staticmethod
-    def input_box(title, message):
+    def input_box(title: str, message: str):
         dlg = wx.TextEntryDialog(None, message, title)
         dlg.ShowModal()
         return dlg.GetValue()
