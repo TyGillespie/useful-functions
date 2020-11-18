@@ -32,7 +32,7 @@ Prompts the user for some iinformation. Returns text typed. If you don't pass so
 
 Shows a basic alert box with an 'OK' button.
 
-input_box(title, message)
+#### input_box(title, message)
 
 Shows an input box with an 'OK' and a 'Cancel' button.
 
